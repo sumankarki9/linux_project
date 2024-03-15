@@ -6,19 +6,19 @@ User management is one of the main tasks of Linux administrators. It involves cr
 
 1. **Add User:**
    - This command is used to create a new user account.
-   - Syntax: `$ sudo adduser <username>`
+   - syntax: `$ sudo adduser <username>`
     ![Add User](/assets/adduser.png)
    - Note: 
      - 'whoami' is used to display the current username.
      - 'su' command is used to switch user.
 
 2. **Change User Password:**
-   - Syntax: `$ sudo passwd <username>`
-   - ![Change User Password](/assets/usr_passwd_ch.png)
+   - syntax: `$ sudo passwd <username>`
+    ![Change User Password](/assets/usr_passwd_ch.png)
 
 3. **Delete User:**
    - To delete a user in Linux, use the 'userdel' command.
-   - Example: `$ sudo userdel <username>`
+   - syntax: `$ sudo userdel <username>`
    - ![Delete User](/assets/del_usr.png)
 
 ## Group Management
