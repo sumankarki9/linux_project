@@ -14,12 +14,12 @@ User management is one of the main tasks of Linux administrators. It involves cr
 
 2. **Change User Password:**
    - Syntax: `$ sudo passwd <username>`
-   ![Change User Password](/assets/usr_passwd_ch.png)
+   - ![Change User Password](/assets/usr_passwd_ch.png)
 
 3. **Delete User:**
    - To delete a user in Linux, use the 'userdel' command.
    - Example: `$ sudo userdel <username>`
-   ![Delete User](/assets/del_usr.png)
+   - ![Delete User](/assets/del_usr.png)
 
 ## Group Management
 
@@ -27,12 +27,12 @@ Group management involves creating, modifying, and deleting groups to organize u
 
 1. **Add Group:**
    - Syntax: `$ sudo addgroup <groupname>`
-   ![Add Group](/assets/add_group.png)
+   - ![Add Group](/assets/add_group.png)
 
 2. **Add User to Group:**
    - To add an existing user to a group: `$ sudo usermod -aG <groupname> <username>`
    - Note: '-aG' appends to the group list.
-   ![Add User to Group](/assets/adduser_to_grp.png)
+   - ![Add User to Group](/assets/adduser_to_grp.png)
 
 3. **Delete Group:**
    - To delete a group: `$ sudo delgroup <groupname>`
@@ -45,11 +45,11 @@ Proper management of file and directory permissions is crucial for security and 
 
 1. **Change Ownership:**
    - To change the ownership of a file or directory: `$ sudo chown <owner:group> <file or directory>`
-   ![Change Ownership](/assets/ch_ownership_grp.png)
+   - ![Change Ownership](/assets/ch_ownership_grp.png)
 
 2. **Change Permissions (Chmod):**
    - Files and directories have associated permissions represented by a series of letters and symbols.
-   ![Permissions Explanation](/assets/chmod.png)
+   - ![Permissions Explanation](/assets/chmod.png)
    - **Symbolic Representation:** `$ sudo chmod u+rwx,g+rwx,o+rwx <filename>` ![Symbolic Permissions](/assets/symbolic.png)
    - **Numeric Representation:** `$ sudo chmod 777 <filename>` ![Numeric Permissions](/assets/numberic.png)
 
