@@ -7,7 +7,7 @@
 2. **nano**:  
     `nano` is a simple terminal-based text editor known for its user-friendly interface. It can be installed using a package manager like apt on Debian/Ubuntu systems:
     ```bash
-    sudo apt-get install nano
+    $ sudo apt-get install nano
     ```  
     Here's an example of the nano screen layout:  
     ![nano](/assets/nano.png)
@@ -25,7 +25,7 @@
     `vim` is a highly configurable text editor designed for efficient text manipulation. It is included as "vi" with most UNIX systems.  
     It can be installed using a package manager like apt on Debian/Ubuntu systems:
     ```bash
-    sudo apt-get install vim
+    $ sudo apt-get install vim
     ```  
     Here's the screen layout of vim:  
     ![vim](/assets/vim.png)
@@ -36,9 +36,9 @@
 
     In Normal mode:
     - We use arrow keys to move the cursor
-    - 'h', 'j', 'k', 'l' for left, down, up, and right respectively
-    - 'gg' is used to go to the beginning of the file
-    - 'G' is used to go to the end of the file
+    - `h` `j` `k` `l`for left, down, up, and right respectively
+    - `gg` is used to go to the beginning of the file
+    - `G` is used to go to the end of the file
     - `:set number` is used to display line numbers
 
     In Insert mode:
