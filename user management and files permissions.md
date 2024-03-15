@@ -13,8 +13,9 @@ User management is one of the main tasks of Linux administrators. It involves cr
      - 'su' command is used to switch user.
 
 2. **Change User Password:**
+   - To change user password in Linux, use the 'passwd' command.
    - syntax: `$ sudo passwd <username>`
-    ![Change User Password](/assets/usr_passwd_ch.png)
+   - ![Change User Password](/assets/usr_passwd_ch.png)
 
 3. **Delete User:**
    - To delete a user in Linux, use the 'userdel' command.
