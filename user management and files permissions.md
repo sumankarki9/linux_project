@@ -7,7 +7,7 @@ User management is one of the main tasks of Linux administrators. It involves cr
 1. **Add User:**
    - This command is used to create a new user account.
    - Syntax: `$ sudo adduser <username>`
-   - ![Add User](/assets/adduser.png)
+    ![Add User](/assets/adduser.png)
    - Note: 
      - 'whoami' is used to display the current username.
      - 'su' command is used to switch user.
