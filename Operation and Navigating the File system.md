@@ -1,5 +1,5 @@
 1.
-   'pwd' is used to print the current working directory.
+   `pwd` is used to print the current working directory.
    
    ![pwd](/assets/1.pwd.png)
 
@@ -8,28 +8,28 @@
    
    ![cd](/assets/2.cd.png)
 
-3. **ls**
+3. 
    `ls` command is used to list the contents of a directory.
    
    ![ls](/assets/.ls.png)
 
-4. **mkdir**
+4. 
    `mkdir` is used to create a directory in Linux. It stands for Make Directory.
    
    ![mkdir](/assets/4.mkdir.png)
 
-5. **rmdir**
+5. 
    `rmdir` (remove directory) is used to remove an empty directory.
    
    ![rmdir](/assets/5.rmdir.png)
 
-6. **Touch**
+6. 
    The `touch` command is used to create an empty file.
    
    ![touch](/assets/6.touch.png)
 
-7. **REMOVE (RM / rm -rf)**
-   a. `rm` is used to remove a file.
+7. 
+   a. `rm` stands for remove is used to remove a file.
    
    ![rm](/assets/8.rm.png)
 
@@ -40,7 +40,7 @@
    
    ![rm -rf](/assets/rmrf.png)
 
-8. **Viewing File Content - cat**
+8.
    `cat` stands for concatenate. It is a quick way to preview the contents of a text file without having to open the file.
    
    ![cat](/assets/cat.png)
