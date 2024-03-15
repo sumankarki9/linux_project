@@ -1,9 +1,9 @@
-1. **pwd**
-   Pwd is used to print the current working directory.
+1.
+   'pwd' is used to print the current working directory.
    
    ![pwd](/assets/1.pwd.png)
 
-2. **cd**
+2. 
    `cd` command is used to change the directory.
    
    ![cd](/assets/2.cd.png)
