@@ -23,10 +23,6 @@
    
    ![rmdir](/assets/5.rmdir.png)
 
-6. 
-   The `touch` command is used to create an empty file.
-   
-   ![touch](/assets/6.touch.png)
 
 7. 
    a. `rm` stands for remove is used to remove a file.
