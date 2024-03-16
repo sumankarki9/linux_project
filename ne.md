@@ -9,8 +9,8 @@ User management is one of the main tasks of Linux administrators. It involves cr
     syntax: `$ sudo adduser <username>`
     ![Add User](/assets/adduser.png)
     Note: 
-     - 'whoami' is used to display the current username.
-     - 'su' command is used to switch user.
+     - `whoami` is used to display the current username.
+     - `su` command is used to switch user.
 
 2. **Change User Password:**
     To change user password in Linux, use the 'passwd' command.
@@ -19,7 +19,8 @@ User management is one of the main tasks of Linux administrators. It involves cr
 
 3. **Delete User:**
     To delete a user in Linux, use the 'userdel' command.
-    syntax: `$ sudo userdel <username>`
+   syntax: `$ sudo userdel <username>`
+
     ![Delete User](/assets/del_usr.png)
 
 ## Group Management
@@ -31,8 +32,11 @@ Group management involves creating, modifying, and deleting groups to organize u
     ![Add Group](/assets/add_group.png)
 
 2. **Add User to Group:**
-    To add an existing user to a group: `$ sudo usermod -aG <groupname> <username>`
-   - `NOTE`: '-aG' appends to the group list.
+    To add an existing user to a group:
+    syntax: `$ sudo usermod -aG <groupname> <username>`
+   - `NOTE` : '-aG' appends to the group list.
+
+
     ![Add User to Group](/assets/adduser_to_grp.png)
 
 3. **Delete Group:**
@@ -58,18 +62,19 @@ Proper management of file and directory permissions is crucial for security and 
 a. In directories: 
     `drwxr-xr-x` :- this represent the type and permissions of the directory:-   
 
-   `d` = directory
-   `rwx`= permissions of the owner (testuser)
-   `r-x`= permissions for the group (testgroup)
-   `r-x` = permissions for others
+   - `d`   directory
+   - `rwx` permissions of the owner (testuser)
+   - `r-x` permissions for the group (testgroup)
+   - `r-x`  permissions for others
 
 b. In files:
-   `-rw-r–r– 1` :-this represent the type and permissions of the directory :- 
 
-   -`-`  file
-   -`rw` permissions of the owner (testuser)
-   -`r`  permissions for the group       
-   -`r`  opermissions for others
+   - `-rw-r–r– 1` :-this represent the type and permissions of the directory :- 
+
+   - `-`  file
+   - `rw` permissions of the owner (testuser)
+   - `r`  permissions for the group       
+   - `r`  opermissions for others
 
    -`NOTE`: First three permission like `rwx` for users. second three `rwx` for Group and other three `rwx` for others and it applies both file and directory.
 
