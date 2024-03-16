@@ -79,13 +79,12 @@ Package management on Linux involves the installation, upgrading, configuration,
 APT is the package management command-line tool used in Debian-based Linux distributions, including Ubuntu. Here are some common apt commands:
 
 - Updating package lists:
-
 `$ sudo apt-get update`
 
-- Upgrading Installed packages:-
+- Upgrading Installed packages:
 `$ sudo apt-get upgrade -y`
 
-- Installing a package:-
+- Installing a package:
 `sudo apt install <package name>`
 
 - Removing a package:
