@@ -1,59 +1,125 @@
-echo "# Command-Line Text Editors: nano and vim" > readme.md
+# User Management and File Permissions
 
-echo "## 1. touch Command" >> readme.md
-echo "" >> readme.md
-echo "The \`touch\` command is used to create an empty file." >> readme.md
-echo "   " >> readme.md
-echo "![touch](/assets/6.touch.png)" >> readme.md
-echo "" >> readme.md
+## User Management
 
-echo "## 2. nano Command" >> readme.md
-echo "" >> readme.md
-echo "\`nano\` is a simple terminal-based text editor that is user-friendly. It can be installed using the package manager. For example, on Debian/Ubuntu systems, use the following command:" >> readme.md
-echo "\`\`\`bash" >> readme.md
-echo "sudo apt-get install nano" >> readme.md
-echo "\`\`\`" >> readme.md
-echo "" >> readme.md
-echo "Here's an example of the nano screen layout:" >> readme.md
-echo "![nano](/assets/nano.png)" >> readme.md
-echo "" >> readme.md
-echo "**Navigation in the nano editor:**" >> readme.md
-echo "- \`ctrl + G\`: Display the help menu" >> readme.md
-echo "- \`ctrl + O\`: Save the file" >> readme.md
-echo "- \`ctrl + R\`: Read a new file" >> readme.md
-echo "- \`Ctrl + W\`: Search for a string" >> readme.md
-echo "- \`Ctrl + K\`: Cut a line" >> readme.md
-echo "- \`Ctrl + U\`: Paste a cut line" >> readme.md
-echo "- \`ctrl + x\`: Exit nano" >> readme.md
-echo "" >> readme.md
+User management is one of the main tasks of Linux administrators. It involves creating, modifying, and deleting user accounts, as well as managing user permissions and access. Here are some basic commands related to user management:-
 
-echo "## 3. vim Command" >> readme.md
-echo "" >> readme.md
-echo "\`vim\` is a highly configurable text editor included with most UNIX systems. It can be installed using the package manager. For example, on Debian/Ubuntu systems, use the following command:" >> readme.md
-echo "\`\`\`bash" >> readme.md
-echo "sudo apt-get install vim" >> readme.md
-echo "\`\`\`" >> readme.md
-echo "" >> readme.md
-echo "Here's the screen layout of vim:" >> readme.md
-echo "![vim](/assets/vim.png)" >> readme.md
-echo "" >> readme.md
-echo "### Modes in vim:" >> readme.md
-echo "" >> readme.md
-echo "**Normal mode (command mode):**" >> readme.md
-echo "- Use arrow keys to move the cursor." >> readme.md
-echo "- \`h\`, \`j\`, \`k\`, \`l\` for left, down, up, and right movements, respectively." >> readme.md
-echo "- \`gg\` to go to the beginning of the file." >> readme.md
-echo "- \`G\` to go to the end of the file." >> readme.md
-echo "- \`:\set number\` to display line numbers." >> readme.md
-echo "" >> readme.md
-echo "**Insert mode:**" >> readme.md
-echo "- \`I\` to enter into the insert mode before the cursor." >> readme.md
-echo "- \`r\` to enter into the insert mode at the beginning of the line." >> readme.md
-echo "- \`a\` to enter insert mode after the cursor." >> readme.md
-echo "- \`A\` to enter insert mode at the end of the line." >> readme.md
-echo "" >> readme.md
-echo "**Saving and Exiting:**" >> readme.md
-echo "- \`:\q\` to quit vim." >> readme.md
-echo "- \`:\wq\` to save changes and quit vim." >> readme.md
-echo "- \`:\q!\` to quit without saving changes in vim." >> readme.md
+```bash
+1. **Add User:**
+   - This command is used to create a new user account.
+   - syntax: `$ sudo adduser <username>`
+    ![Add User](/assets/adduser.png)
+   - Note: 
+     - 'whoami' is used to display the current username.
+     - 'su' command is used to switch user.
+
+2. **Change User Password:**
+   - To change user password in Linux, use the 'passwd' command.
+   - syntax: `$ sudo passwd <username>`
+   - ![Change User Password](/assets/usr_passwd_ch.png)
+
+3. **Delete User:**
+   - To delete a user in Linux, use the 'userdel' command.
+   - syntax: `$ sudo userdel <username>`
+   - ![Delete User](/assets/del_usr.png)
+
+
+Group Management
+Group management involves creating, modifying, and deleting groups to organize users and define their collective permissions.
+
+1. **Add Group:**
+   - Syntax: `$ sudo addgroup <groupname>`
+   - ![Add Group](/assets/add_group.png)
+
+2. **Add User to Group:**
+   - To add an existing user to a group: `$ sudo usermod -aG <groupname> <username>`
+   - Note: '-aG' appends to the group list.
+   - ![Add User to Group](/assets/adduser_to_grp.png)
+
+3. **Delete Group:**
+   - To delete a group: `$ sudo delgroup <groupname>`
+   
+    ![Delete Group](/assets/del_grp.png)
+
+File and Directory Permissions
+Proper management of file and directory permissions is crucial for security and access control.
+
+1. **Change Ownership:**
+   - To change the ownership of a file or directory: `$ sudo chown <owner:group> <file or directory>`
+   - ![Change Ownership](/assets/ch_ownership_grp.png)
+
+
+   In this figure I have a directory named `test_dir` and a file named `testfile` . Initially, both were owned by the user `suman` and the group `suman`.
+
+   After I use the `sudo chown` command to change the ownership of both `test_dir` and `testfile` to a new user named `testuser` and a new group named `testgroup` .
+
+2. **Change Permissions (Chmod):**
+   - Files and directories have associated permissions represented by a series of letters and symbols.
+   - ![Permissions Explanation](/assets/chmod.png)
+ 
+ 
+ a. In directories : 
+    `drwxr-xr-x` :- this represent the type and permissions of the directory :-   
+
+   `d` = directory
+   `rwx`= permissions of the owner (testuser)
+   `r-x`= permissions for the group (testgroup)
+   `r-x` = permissions for others
+
+
+ b. In files:
+   `-rw-r–r– 1` :-this represent the type and         permissions of the directory :- 
+
+
+   `-`  = file
+   `rw` = permissions of the owner (testuser)
+   `r`  = permissions for the group       
+   `r`  = opermissions for others
+
+
+   -`NOTE`: First three permission like `rwx` for users. second three `rwx` for Group and other three `rwx` for others and it applies both file and directory.
+
+
+Here’s the  detailed overview of symbolic and numeric representation in permission:-
+
+
+   - **Symbolic Representation:**
+   
+    - `r`: Read
+    - `w`: Write
+    - `x`: Execute
+    - `-`: No permission
+   
+   eg:  if we need to change the file permission to read, write and execute to all (user, group and others) in symbolic we use this command:-
+
+   
+    `$ sudo chmod u+rwx,g+rwx,o+rwx <filename>` !
+    
+    [Symbolic Permissions](/assets/symbolic.png)
+
+     
+
+
+   - **Numeric Representation:**
+   
+    • `4`: Read
+    • `2`: Write
+    • `1`: Execute
+   eg:  if we need to change the file permission to read, write and execute to all (user, group and others) in numeric we use this command:-
+   
+    `$ sudo chmod 777 <filename>` ![Numeric Permissions](/assets/numberic.png)
+
+3. **Change Owner (Chown):**
+   - To change the owner or group of a file or directory: `$ sudo chown <owner:group> <file_or_dir>`
+   ![Change Owner](/assets/chown.png)
+
+4. **Change Group (Chgrp):**
+   - To change the group ownership of a file or directory: `$ sudo chgrp <groupname> <file_or_dir>`
+   ![Change Group](/assets/chgrp.png)
+
+
+
+
+
+
 
