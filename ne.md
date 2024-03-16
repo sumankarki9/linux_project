@@ -72,10 +72,10 @@ Proper management of file and directory permissions is crucial for security and 
    `-rw-r–r– 1` :-this represent the type and         permissions of the directory :- 
 
 
-   `-`  = file
-   `rw` = permissions of the owner (testuser)
-   `r`  = permissions for the group       
-   `r`  = opermissions for others
+   -`-`  file
+   -`rw` permissions of the owner (testuser)
+   -`r`  permissions for the group       
+   -`r`  opermissions for others
 
 
    -`NOTE`: First three permission like `rwx` for users. second three `rwx` for Group and other three `rwx` for others and it applies both file and directory.
@@ -86,10 +86,10 @@ Here’s the  detailed overview of symbolic and numeric representation in permis
 
    - **Symbolic Representation:**
    
-    - `r`: Read
-    - `w`: Write
-    - `x`: Execute
-    - `-`: No permission
+    - `r` Read
+    - `w` Write
+    - `x` Execute
+    - `-` No permission
    
    eg:  if we need to change the file permission to read, write and execute to all (user, group and others) in symbolic we use this command:-
 
@@ -103,9 +103,9 @@ Here’s the  detailed overview of symbolic and numeric representation in permis
 
    - **Numeric Representation:**
    
-    • `4`: Read
-    • `2`: Write
-    • `1`: Execute
+    - `4` Read
+    - `2` Write
+    - `1` Execute
    eg:  if we need to change the file permission to read, write and execute to all (user, group and others) in numeric we use this command:-
    
     `$ sudo chmod 777 <filename>` ![Numeric Permissions](/assets/numberic.png)
