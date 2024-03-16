@@ -75,7 +75,7 @@ b. In files:
    - `-`  file
    - `rw` permissions of the owner (testuser)
    - `r`  permissions for the group       
-   - `r`  opermissions for others
+   - `r`  permissions for others
 
    -`NOTE`: First three permission like `rwx` for users. second three `rwx` for Group and other three `rwx` for others and it applies both file and directory.
 
