@@ -86,10 +86,10 @@ Here’s the  detailed overview of symbolic and numeric representation in permis
 
    - **Symbolic Representation:**
    
-    - • `r`: Read
-    - • `w`: Write
-    - • `x`: Execute
-    - • `-`: No permission
+    - `r`: Read
+    - `w`: Write
+    - `x`: Execute
+    - `-`: No permission
    
    eg:  if we need to change the file permission to read, write and execute to all (user, group and others) in symbolic we use this command:-
 
