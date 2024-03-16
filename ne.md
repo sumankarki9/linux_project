@@ -40,7 +40,8 @@ Group management involves creating, modifying, and deleting groups to organize u
     ![Add User to Group](/assets/adduser_to_grp.png)
 
 3. **Delete Group:**
-    To delete a group: `$ sudo delgroup <groupname>`
+    To delete a group: 
+    syntax:`$ sudo delgroup <groupname>`
     ![Delete Group](/assets/del_grp.png)
 
 ## File and Directory Permissions
@@ -100,7 +101,7 @@ Here’s the  detailed overview of symbolic and numeric representation in permis
     - `1` Execute
    eg:  if we need to change the file permission to read, write and execute to all (user, group and others) in numeric we use this command:-
    
-    `$ sudo chmod 777 <filename>` ![Numeric Permissions](/assets/numberic.png)
+`$ sudo chmod 777 <filename>` ![Numeric Permissions](/assets/numberic.png)
 
 3. **Change Owner (Chown):**
    - To change the owner or group of a file or directory: 
