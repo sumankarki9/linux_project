@@ -96,7 +96,7 @@ Here’s the  detailed overview of symbolic and numeric representation in permis
    
     `$ sudo chmod u+rwx,g+rwx,o+rwx <filename>` !
     
-    [Symbolic Permissions](/assets/symbolic.png)
+    ![Symbolic Permissions](/assets/symbolic.png)
 
      
 
