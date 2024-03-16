@@ -4,7 +4,7 @@
 
 Process management is an essential aspect of Linux administration. Here’s an overview of some important commands: 
 
-1. **Viewing Processes**!
+1. **Viewing Processes**  
 
     a. `ps`: Provides a snapshot of the currently running processes on the system.
     
