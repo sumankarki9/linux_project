@@ -4,7 +4,6 @@
 
 User management is one of the main tasks of Linux administrators. It involves creating, modifying, and deleting user accounts, as well as managing user permissions and access. Here are some basic commands related to user management:-
 
-```bash
 1. **Add User:**
    - This command is used to create a new user account.
    - syntax: `$ sudo adduser <username>`
@@ -23,8 +22,8 @@ User management is one of the main tasks of Linux administrators. It involves cr
    - syntax: `$ sudo userdel <username>`
    - ![Delete User](/assets/del_usr.png)
 
+## Group Management
 
-Group Management
 Group management involves creating, modifying, and deleting groups to organize users and define their collective permissions.
 
 1. **Add Group:**
@@ -40,8 +39,10 @@ Group management involves creating, modifying, and deleting groups to organize u
    - To delete a group: `$ sudo delgroup <groupname>`
    
     ![Delete Group](/assets/del_grp.png)
+    
 
-File and Directory Permissions
+## File and Directory Permissions
+
 Proper management of file and directory permissions is crucial for security and access control.
 
 1. **Change Ownership:**
@@ -116,10 +117,3 @@ Here’s the  detailed overview of symbolic and numeric representation in permis
 4. **Change Group (Chgrp):**
    - To change the group ownership of a file or directory: `$ sudo chgrp <groupname> <file_or_dir>`
    ![Change Group](/assets/chgrp.png)
-
-
-
-
-
-
-
