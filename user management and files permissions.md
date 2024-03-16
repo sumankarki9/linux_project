@@ -2,7 +2,7 @@
 
 ## User Management
 
-User management is one of the main tasks of Linux administrators. It involves creating, modifying, and deleting user accounts, as well as managing user permissions and access.
+User management is one of the main tasks of Linux administrators. It involves creating, modifying, and deleting user accounts, as well as managing user permissions and access.Here the some basic commands related to user management:-
 
 1. **Add User:**
    - This command is used to create a new user account.
@@ -37,8 +37,9 @@ Group management involves creating, modifying, and deleting groups to organize u
 
 3. **Delete Group:**
    - To delete a group: `$ sudo delgroup <groupname>`
-   - Example of deleting a group:
+   
     ![Delete Group](/assets/del_grp.png)
+    
 
 ## File and Directory Permissions
 
@@ -48,11 +49,66 @@ Proper management of file and directory permissions is crucial for security and 
    - To change the ownership of a file or directory: `$ sudo chown <owner:group> <file or directory>`
    - ![Change Ownership](/assets/ch_ownership_grp.png)
 
+
+   In this figure I have a directory named `test_dir` and a file named `testfile` . Initially, both were owned by the user `suman` and the group `suman`.
+
+   After I use the `sudo chown` command to change the ownership of both `test_dir` and `testfile` to a new user named `testuser` and a new group named `testgroup` .
+
 2. **Change Permissions (Chmod):**
    - Files and directories have associated permissions represented by a series of letters and symbols.
    - ![Permissions Explanation](/assets/chmod.png)
-   - **Symbolic Representation:** `$ sudo chmod u+rwx,g+rwx,o+rwx <filename>` ![Symbolic Permissions](/assets/symbolic.png)
-   - **Numeric Representation:** `$ sudo chmod 777 <filename>` ![Numeric Permissions](/assets/numberic.png)
+ 
+ 
+ a. In directories : 
+    `drwxr-xr-x` :- this represent the type and permissions of the directory :-   
+
+   `d` = directory
+   `rwx`= permissions of the owner (testuser)
+   `r-x`= permissions for the group (testgroup)
+   `r-x` = permissions for others
+
+
+ b. In files:
+   `-rw-r–r– 1` :-this represent the type and         permissions of the directory :- 
+
+
+   `-`  = file
+   `rw` = permissions of the owner (testuser)
+   `r`  = permissions for the group       
+   `r`  = opermissions for others
+
+
+   -`NOTE`: First three permission like `rwx` for users. second three `rwx` for Group and other three `rwx` for others and it applies both file and directory.
+
+
+Here’s the  detailed overview of symbolic and numeric representation in permission:-
+
+
+   - **Symbolic Representation:**
+   
+    • `r`: Read
+    • `w`: Write
+    • `x`: Execute
+    • `-`: No permission
+   
+   eg:  if we need to change the file permission to read, write and execute to all (user, group and others) in symbolic we use this command:-
+
+   
+    `$ sudo chmod u+rwx,g+rwx,o+rwx <filename>` !
+    
+    [Symbolic Permissions](/assets/symbolic.png)
+
+     
+
+
+   - **Numeric Representation:**
+   
+    • `4`: Read
+    • `2`: Write
+    • `1`: Execute
+   eg:  if we need to change the file permission to read, write and execute to all (user, group and others) in numeric we use this command:-
+   
+    `$ sudo chmod 777 <filename>` ![Numeric Permissions](/assets/numberic.png)
 
 3. **Change Owner (Chown):**
    - To change the owner or group of a file or directory: `$ sudo chown <owner:group> <file_or_dir>`
