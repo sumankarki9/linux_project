@@ -101,7 +101,7 @@ Here’s the  detailed overview of symbolic and numeric representation in permis
      
 
 
-   - Numeric Representation:
+- Numeric Representation:
    
     - `4` Read
     - `2` Write
@@ -113,8 +113,10 @@ Here’s the  detailed overview of symbolic and numeric representation in permis
 3. **Change Owner (Chown):**
    - To change the owner or group of a file or directory: 
    `$ sudo chown <owner:group> <file_or_dir>`
+
    ![Change Owner](/assets/chown.png)
 
 4. Change Group (Chgrp):
    To change the group ownership of a file or directory: `$ sudo chgrp <groupname> <file_or_dir>`
-   ![Change Group](/assets/chgrp.png)SS
+
+   ![Change Group](/assets/chgrp.png)
