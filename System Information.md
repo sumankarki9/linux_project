@@ -55,11 +55,11 @@ The `free` command is used to get information about the system’s memory usage.
 
 Here’s the detailed information about the output (system’s memory usage):
 - `total`: Total RAM available in the system (in this case, it’s 16,111,932 KB).
-- `Used`: Amount of RAM currently in use (in this case, it’s 3,737,252 KB).
-- `Free`: Amount of free RAM (in this case, it’s 10,896,852 KB).
-- `Shared`: Used memory that can be shared among multiple processes (in this case, it’s 693,996 KB).
-- `Buff/Cache`: Memory used for filesystem buffers and cache (in this case, it’s 2,482,892 KB).
-- `Available`: An estimate of how much memory is available for starting new applications, without swapping (in this case, it’s 12,374,680 KB).
+- `used`: Amount of RAM currently in use (in this case, it’s 3,737,252 KB).
+- `free`: Amount of free RAM (in this case, it’s 10,896,852 KB).
+- `shared`: Used memory that can be shared among multiple processes (in this case, it’s 693,996 KB).
+- `buff/cache`: Memory used for filesystem buffers and cache (in this case, it’s 2,482,892 KB).
+- `available`: An estimate of how much memory is available for starting new applications, without swapping (in this case, it’s 12,374,680 KB).
 
 ### g. `lsblk`
 
@@ -68,10 +68,10 @@ This command is used to list information about block devices (hard drives, SSDs,
 ![lsblk](/assets/lsblk.png)
 
 Here’s the breakdown of the output:
-- `sda`: A disk with a total size of 931.5 GB containing two partitions:
+- `sda`: A disk with a total size of 931.5 GB and its contains two partitions:
   - `sda1`: 512 MB in size.
   - `sda2`: 931 GB in size.
-- `nvme0n1`: Another disk with a total size mounted at ‘/boot/efi’ containing three partitions:
+- `nvme0n1`: Another disk with a total size mounted at ‘/boot/efi’ and its contains  three partitions:
   - `nvme0n1p1`: 512 MB in size, mounted at ‘/boot/efi’.
   - `nvme0n1p2`: 237 GB in size, mounted at ‘/’.
   - `nvme0n1p3`: 977 MB in size, used as swap space.
