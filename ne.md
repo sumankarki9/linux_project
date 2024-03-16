@@ -101,13 +101,18 @@ Here’s the  detailed overview of symbolic and numeric representation in permis
     - `1` Execute
    eg:  if we need to change the file permission to read, write and execute to all (user, group and others) in numeric we use this command:-
    
-`$ sudo chmod 777 <filename>` ![Numeric Permissions](/assets/numberic.png)
+syntax: `$ sudo chmod 777 <filename>`
+
+![Numeric Permissions](/assets/numberic.png)
+
 
 3. **Change Owner (Chown):**
    - To change the owner or group of a file or directory: 
    `$ sudo chown <owner:group> <file_or_dir>`
+
    ![Change Owner](/assets/chown.png)
 
 4. Change Group (Chgrp):
    To change the group ownership of a file or directory: `$ sudo chgrp <groupname> <file_or_dir>`
+   
    ![Change Group](/assets/chgrp.png)
