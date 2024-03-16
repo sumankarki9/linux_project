@@ -18,7 +18,7 @@ The `ping` command is a tool for diagnosing connectivity issues, monitoring netw
 
 ![ping](/assets/ping.png)
 
-### c. Interface up/down
+### c. `Interface up/down`
 
 Here's the process to bring a network interface up or down in Linux:
 
