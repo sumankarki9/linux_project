@@ -56,10 +56,10 @@ Proper management of file and directory permissions is crucial for security and 
 
 2. **Change Permissions (Chmod):**
    - Files and directories have associated permissions represented by a series of letters and symbols.
-   - ![Permissions Explanation](/assets/chmod.png)
+   ![Permissions Explanation](/assets/chmod.png)
  
  
- a. In directories: 
+a. In directories: 
     `drwxr-xr-x` :- this represent the type and permissions of the directory:-   
 
    `d` = directory
@@ -83,8 +83,7 @@ Proper management of file and directory permissions is crucial for security and 
 
 Here’s the  detailed overview of symbolic and numeric representation in permission:-
 
-
-   - **Symbolic Representation:**
+-Symbolic Representation:
    
     - `r` Read
     - `w` Write
@@ -94,9 +93,9 @@ Here’s the  detailed overview of symbolic and numeric representation in permis
    eg:  if we need to change the file permission to read, write and execute to all (user, group and others) in symbolic we use this command:-
 
    
-    `$ sudo chmod u+rwx,g+rwx,o+rwx <filename>` !
+`$ sudo chmod u+rwx,g+rwx,o+rwx <filename>` !
     
-    ![Symbolic Permissions](/assets/symbolic.png)
+![Symbolic Permissions](/assets/symbolic.png)
 
      
 
